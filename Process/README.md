@@ -21,7 +21,8 @@ With these things in mind...
 Immediately the idea of laying out pizza toppings (rather than island-town attractions) seems fun. 
 At lunch with the 'lilionaires<sup>TM</sup> we start brainstorming what kind of goals/restrictions you could implement.
 
-![initial brainstorm session](images/initialBrainstorm.jpg)
+<img src="images/initialBrainstorm.jpg" width="500" />
+
 #### Compelling Ideas:
 * certain foods don't want to be next to others (i.e pineapple <sup>[3](#####3)</sup> )
 * trying to separate out half/quarter pies for different goals (meat lovers, veggie, dairy-free?)
@@ -39,7 +40,7 @@ It  practically makes itself! Except that it doesn't. That's what the next month
 <sub>
 
 ##### 1 Question: if Yahtzee is so named because it was invented on a boat, then why isn't it Yachtzee? They've taken the C out of a game intended for a yacht (all puns intended)
-##### 2 Oddly enough, Dinosaur Island: Rawr 'N Write appears ot have a [digital companion app](https://apps.apple.com/us/app/rawr-n-write/id1587414158) to help in the tedious chore of score-keeping, so maybe the argument is moot
+##### 2 Oddly enough, Dinosaur Island: Rawr 'N Write appears to have a [digital companion app](https://apps.apple.com/us/app/rawr-n-write/id1587414158) to help in the tedious chore of score-keeping, so maybe the argument is moot
 ##### 3 Calm down
 ##### 4 I mean, c'mon
 
