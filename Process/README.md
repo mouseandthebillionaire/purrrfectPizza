@@ -24,7 +24,7 @@ At lunch with the 'lilionaires<sup>TM</sup> we start brainstorming what kind of 
 <img src="images/initialBrainstorm.jpg" width="500" />
 
 #### Compelling Ideas:
-* certain foods don't want to be next to others (i.e pineapple <sup>[3](#####3)</sup> )
+* certain foods don't want to be next to others (i.e pineapple<sup>[3](#####3)</sup> )
 * trying to separate out half/quarter pies for different goals (meat lovers, veggie, dairy-free?)
 * spicy/sweet stuff as bonuses
 * rotating through quadrants for placement
