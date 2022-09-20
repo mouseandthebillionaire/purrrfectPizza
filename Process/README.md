@@ -45,3 +45,45 @@ It  practically makes itself! Except that it doesn't. That's what the next month
 ##### 4 I mean, c'mon
 
 </sub>
+
+## 09.19.22 - Paper Prototyping
+
+The great Mathew Sisson visited this week, and we went through a quick prototype that emerged from some rough sketching.
+These initial sketches led to a couple ideas of how the game could be laid out and played. 
+
+<img src="images/layoutSketching.jpeg" width="500" />
+
+A 5x5 grid would give 60 possible spaces total if one space was added per column for each quarter of the pie (see sketch above). 
+This feels appropriate for eventual development (and maybe even including flexible sizes<sup>[5](#####5)</sup>), but for the initial digital game sketch it seems beneficial to stick to a smaller play area.
+The smaller size of 3X3 leads to 24 total spaces, which will allow for some experimentation with the sonic parameters (which, after all is the main goal here).
+
+### Simple Items/Rules
+
+While it feels natural/obvious to have multiple toppings per card<sup>[6](#####6)</sup>, these early iterations will focus on single ingredients.
+Additionally, the question arises as to how those items are delivered to the player (and placed, for that matter).
+For the sake of simplicity, this first iteration will randomly deliver the available ingredients one at a time, and the player will place them accordingly.
+
+The ingredients along with their "rules" and tile quantities were as follows:
+* Mushrooms (M) x6 - doesn't want to be near other mushrooms
+* Olives (O) x6 - wants to be near other olives
+* Pineapple (P) x4 - wants to be near meat, but no other ingredient wants to be near pineapple 
+* Pepperoni (R) x4 - wants to be near sausage
+* Sausage (S) x4 - wants to be near the crust
+
+<img src="images/playtest_0.jpeg" width="500" />
+
+### Takeaways:
+
+* The points awarded were fairly arbitrary (+1 for each olive near another olive, for example) and definitely need to be tweaked in future iterations.
+* Equal numbers of items as spaces on the playfield has the potential to make the game function as a solvable problem (especially if all ingredients were available at once rather than one by one). This isn't necessarily a bad thing, and could be explored further, but the next iteration will include blank spaces to see how that effects gameplay.
+* Perhaps Pineapple has a bell-curve points effect (i.e 1 pineapple = 2 points, 2 pineapples = 5, but more than that and the points reduce?)
+
+### Next Stage:
+Bringing this rough version into Unity and beginning to work on the Audio
+
+### Notes
+<sub>
+
+##### 5 and different shapes and styles! Grandma pie! Detroit style! Freeform! Deep dish!
+##### 6 an obvious touchstone here is [Circle the Wagons](https://buttonshygames.com/pages/circle-the-wagons) or Matt Sisson's own [Strawberry Sunset](https://stellarfactory.com/en-ca/products/strawberry-sunset) though there are some really interesting tweaks that could be made here, namely square cards instead of rectangular, and cards in which certain ingredients cover up more than one quadrent (i.e cheese). This brings in the fun possibility of stacking these cards to assemble more pleasing creations and introduces strategy to eliminate negative pairings 
+</sub>
