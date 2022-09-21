@@ -161,11 +161,12 @@ public class PQ : MonoBehaviour
                     {
                         GlobalVariables.S.score += 2;
                     }
+                    else
+                    {
+                        GlobalVariables.S.score -= 1;
+                    }
                 }
-                else
-                {
-                    GlobalVariables.S.score -= 1;
-                }
+                
             }
         }
     }
