@@ -87,3 +87,12 @@ Bringing this rough version into Unity and beginning to work on the Audio
 ##### 5 and different shapes and styles! Grandma pie! Detroit style! Freeform! Deep dish!
 ##### 6 an obvious touchstone here is [Circle the Wagons](https://buttonshygames.com/pages/circle-the-wagons) or Matt Sisson's own [Strawberry Sunset](https://stellarfactory.com/en-ca/products/strawberry-sunset) though there are some really interesting tweaks that could be made here, namely square cards instead of rectangular, and cards in which certain ingredients cover up more than one quadrent (i.e cheese). This brings in the fun possibility of stacking these cards to assemble more pleasing creations and introduces strategy to eliminate negative pairings 
 </sub>
+
+## 09.20.22 - First Digital Implementation
+
+### 
+### Assets Used:
+These will (probably) all be updated in future versions of this, particularly with interest seeing how Procreate can be used for original asset creation (thanks for the rec [Z](https://github.com/zSpaceSheikh/)!), but for this iteration the project includes:
+* [Pizza Topping Icons](https://dribbble.com/shots/1373753-Pizza-toppings) by [Xue Ao Zhang](https://www.xue-ao.com/)
+* Display Font: [Fredericka the Great](https://fonts.google.com/specimen/Fredericka+the+Great) - Designed by Tart Workshop
+* Body Font: [Montserrat](https://fonts.google.com/specimen/Montserrat) - Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly 

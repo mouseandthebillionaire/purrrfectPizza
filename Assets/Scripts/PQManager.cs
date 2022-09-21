@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PQManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Sprite[] ingredientImages;
+    
+    
+    public static PQManager S;
+
+    void Awake()
     {
-        
+        S = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ScoreIngredients()
     {
-        
+        GlobalVariables.S.score = 0;
+        transform.BroadcastMessage("ScoreQuadrant");
+        GlobalVariables.S.UpdateScore();
+        GlobalVariables.S.UpdateIngredients();
     }
 }
