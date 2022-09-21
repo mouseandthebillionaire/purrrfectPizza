@@ -90,9 +90,31 @@ Bringing this rough version into Unity and beginning to work on the Audio
 
 ## 09.20.22 - First Digital Implementation
 
-### 
+### First Pass
+This initial implementation is fairly rough. There are no sounds yet, but the framework is here for all future sonic tinkering.
+Additionally, it's not as "gamey" as it will hopefully eventually be, but the bones are here.
+* Hover over an open quadrant
+* Press a key to place an ingredient there
+* See what happens with your points?
+
+<img src="images/digital_v1-1.png" width="500" />
+
+[Version 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v1.1/)
+
+## Takeaways:
+* While trying very hard not to wring hands over the general game design, this feels like a good place to start with the audio experiment. 
+* The placement of tiles actually feels quite fun and puzzley, as there probably is a "right" solution to the given constraints. 
+* Manipulating the number and type of toppings available in a given round would be a way to create levels in this design solution
+
 ### Assets Used:
-These will (probably) all be updated in future versions of this, particularly with interest seeing how Procreate can be used for original asset creation (thanks for the rec [Z](https://github.com/zSpaceSheikh/)!), but for this iteration the project includes:
+These will (probably) all be updated in future versions<sup>[7](######7)</sup>, but for this iteration the project includes:
 * [Pizza Topping Icons](https://dribbble.com/shots/1373753-Pizza-toppings) by [Xue Ao Zhang](https://www.xue-ao.com/)
 * Display Font: [Fredericka the Great](https://fonts.google.com/specimen/Fredericka+the+Great) - Designed by Tart Workshop
 * Body Font: [Montserrat](https://fonts.google.com/specimen/Montserrat) - Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly 
+
+### Notes
+<sub>
+
+###### 7 particularly with interest seeing how Procreate can be used for original asset creation (thanks for the rec [Z](https://github.com/zSpaceSheikh/)!
+
+</sub>
