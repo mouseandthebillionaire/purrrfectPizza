@@ -106,7 +106,6 @@ public class PQ : MonoBehaviour
         {
             if (ingredientType == GlobalVariables.S.ingredientTypes[i])
             {
-                Debug.Log("It's a " + GlobalVariables.S.ingredientTypes[i].ToString());
                 if (ingredientType == "M") Mushroom();
                 if (ingredientType == "O") Olive();
                 if (ingredientType == "P") Pineapple();
@@ -116,74 +115,72 @@ public class PQ : MonoBehaviour
         }
     }
     
+    // Function to Check Surrounding and return their Ingredient Type
+    private string GetSurrounding(int CL, int SL)
+    {
+        // not within range
+        if (SL <= 0 || SL >= 35) return "";
+        // Wraparound Ingredient
+        // I'm on the right crust - don't look on the left crust
+        else if ((CL + 1) % 6 == 0 && SL % 6 == 0)
+        {
+            Debug.Log(CL + " is on the Right Crust and " + SL + " is on the Left Crust - no score");
+            return "";
+        }
+        // I'm on the left crist - don't look on the right crust
+        else if (CL % 6 == 0 && ((SL + 1) % 6 == 0))
+        {
+            Debug.Log(CL + " is on the Left Crust and " + SL + " is on the Right Crust - no score");
+            return "";
+        }
+        
+        // Kosher ingredient
+        else {
+            GameObject other = GameObject.Find(SL.ToString());
+            string nearbyIngredient = other.GetComponent<PQ>().ingredientType;
+            return nearbyIngredient;
+        }
+    }
+    
     // Special Functions for Each Ingredient (for ease of this iteration)
     private void Mushroom()
     {
-        for (int i = 0; i < GlobalVariables.S.directionalNums.Length; i++)
-        {
-            int PQLoc = int.Parse(this.transform.name) + GlobalVariables.S.directionalNums[i];
-            if (PQLoc >= 0 && PQLoc <= 35)
-            {
-                GameObject other = GameObject.Find(PQLoc.ToString());
-                if (other.GetComponent<PQ>().ingredientType == "M")
-                {
-                    GlobalVariables.S.score -= 1;
-                }
-            }
+        for(int i=0; i<GlobalVariables.S.directionalNums.Length; i++){
+            int myLoc = int.Parse(this.transform.name);
+            int surroundingLoc = myLoc + GlobalVariables.S.directionalNums[i];
+            string s = GetSurrounding(myLoc, surroundingLoc);
+            if (s == "M") GlobalVariables.S.score -= 1;
         }
     }
     
     private void Olive()
     {
-        for (int i = 0; i < GlobalVariables.S.directionalNums.Length; i++)
-        {
-            int PQLoc = int.Parse(this.transform.name) + GlobalVariables.S.directionalNums[i];
-            if (PQLoc >= 0 && PQLoc <= 35)
-            {
-                GameObject other = GameObject.Find(PQLoc.ToString());
-                if (other.GetComponent<PQ>().ingredientType == "O") GlobalVariables.S.score += 1;
-            }
+        for(int i=0; i<GlobalVariables.S.directionalNums.Length; i++){
+            int myLoc = int.Parse(this.transform.name);
+            int surroundingLoc = myLoc + GlobalVariables.S.directionalNums[i];
+            string s = GetSurrounding(myLoc, surroundingLoc);
+            if (s == "0") GlobalVariables.S.score += 1;
         }
     }
     
     private void Pineapple()
     {
-        for (int i = 0; i < GlobalVariables.S.directionalNums.Length; i++)
-        {
-            int PQLoc = int.Parse(this.transform.name) + GlobalVariables.S.directionalNums[i];
-            if (PQLoc >= 0 && PQLoc <= 35)
-            {
-                GameObject other = GameObject.Find(PQLoc.ToString());
-                if (other.GetComponent<PQ>().ingredientType != "")
-                {
-                    if (other.GetComponent<PQ>().ingredientType == "S" ||
-                        other.GetComponent<PQ>().ingredientType == "R")
-                    {
-                        GlobalVariables.S.score += 2;
-                    }
-                    else
-                    {
-                        GlobalVariables.S.score -= 1;
-                    }
-                }
-                
-            }
+        for(int i=0; i<GlobalVariables.S.directionalNums.Length; i++){
+            int myLoc = int.Parse(this.transform.name);
+            int surroundingLoc = myLoc + GlobalVariables.S.directionalNums[i];
+            string s = GetSurrounding(myLoc, surroundingLoc);
+            if (s == "S" || s == "R") GlobalVariables.S.score += 2;
+            else if (s != "") GlobalVariables.S.score -= 1;
         }
     }
     
     private void Roni()
     {
-        for (int i = 0; i < GlobalVariables.S.directionalNums.Length; i++)
-        {
-            int PQLoc = int.Parse(this.transform.name) + GlobalVariables.S.directionalNums[i];
-            if (PQLoc >= 0 && PQLoc <= 35)
-            {
-                GameObject other = GameObject.Find(PQLoc.ToString());
-                if (other.GetComponent<PQ>().ingredientType == "S")
-                {
-                    GlobalVariables.S.score += 1;
-                }
-            }
+        for(int i=0; i<GlobalVariables.S.directionalNums.Length; i++){
+            int myLoc = int.Parse(this.transform.name);
+            int surroundingLoc = myLoc + GlobalVariables.S.directionalNums[i];
+            string s = GetSurrounding(myLoc, surroundingLoc);
+            if (s == "S") GlobalVariables.S.score += 1;
         }
     }
     

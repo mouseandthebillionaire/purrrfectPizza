@@ -410,6 +410,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -471,6 +475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1065,7 +1073,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: ingredientType
-      value: M
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
@@ -1133,6 +1145,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1339,6 +1355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -1729,6 +1749,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1934,6 +1958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3378,6 +3406,10 @@ PrefabInstance:
       propertyPath: ingredientType
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -3509,6 +3541,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1055610887}
     m_Modifications:
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -4210,7 +4246,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: ingredientType
-      value: M
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156340251411791354, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
+      propertyPath: acceptingIngredient
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1156340251411791355, guid: b8b8bfbe354f54b599b1a2c8dd183ab5, type: 3}
       propertyPath: m_RootOrder

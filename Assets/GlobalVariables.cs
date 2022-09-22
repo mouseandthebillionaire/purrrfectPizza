@@ -30,12 +30,6 @@ public class GlobalVariables : MonoBehaviour
         UpdateIngredients();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(score);
-    }
-
     public void UpdateScore()
     {
         scoreText.text = "Score:\n" + score.ToString();
