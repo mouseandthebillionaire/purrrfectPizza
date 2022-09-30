@@ -129,7 +129,7 @@ The idea behind this first one here is pretty straightforward, namely: <i>as tim
 
 One interesting note about this is that there actually isn't a visible timer for the player, the hope being that we are actually relying on the sound itself to cause stress and/or communicate rising intensity rather than a standard clock.
 
-[Sound Experiment 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v2.0/)
+[Sound Experiment 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v2.1/)
 
 ### Takeaways:
 * This seems fairly successful? Next steps will be to add music that perhaps lives in the world (i.e. sonically similar to arcade music from the pizza joint's "arcade) and also increases in intensity as time progresses
