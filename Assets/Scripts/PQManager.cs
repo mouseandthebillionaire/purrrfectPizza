@@ -20,5 +20,6 @@ public class PQManager : MonoBehaviour
         transform.BroadcastMessage("ScoreQuadrant");
         GlobalVariables.S.UpdateScore();
         GlobalVariables.S.UpdateIngredients();
+        Debug.Log("bang");
     }
 }

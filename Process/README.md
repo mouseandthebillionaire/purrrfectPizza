@@ -101,7 +101,7 @@ Additionally, it's not as "gamey" as it will hopefully eventually be, but the bo
 
 [Version 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v1.1/)
 
-## Takeaways:
+### Takeaways:
 * While trying very hard not to wring hands over the general game design, this feels like a good place to start with the audio experiment. 
 * The placement of tiles actually feels quite fun and puzzley, as there probably is a "right" solution to the given constraints. 
 * Manipulating the number and type of toppings available in a given round would be a way to create levels in this design solution
@@ -116,5 +116,42 @@ These will (probably) all be updated in future versions<sup>[7](######7)</sup>, 
 <sub>
 
 ###### 7 particularly with interest seeing how Procreate can be used for original asset creation (thanks for the rec [Z](https://github.com/zSpaceSheikh/)!
+
+</sub>
+
+## 09.30.22 Sound Experiment 1
+So begins the experimentation into different sonic possibilities.
+
+Initially this was going to be done using [Wwise](https://www.audiokinetic.com/en/products/wwise/) after discussing the options with Dr. Dimitrov<sup>[8](######8)</sup>, but (numerous tutorials and preparations later) it turns out that Wwise doesn't export on Unity WebGL builds!
+It seems important to keep this on the web for testing and compatability reasons, so... back to [FMOD](https://fmod.com/) we go. It will be interesting to see how the ideas that were originally intended for a Wwise-specific mindset get translated into fmod. 
+
+The idea behind this first one here is pretty straightforward, namely: <i>as time progresses the restaurant grows louder and more chaotic</i>.
+
+One interesting note about this is that there actually isn't a visible timer for the player, the hope being that we are actually relying on the sound itself to cause stress and/or communicate rising intensity rather than a standard clock.
+
+[Sound Experiment 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v2.0/)
+
+### Takeaways:
+* This seems fairly successful? Next steps will be to add music that perhaps lives in the world (i.e. sonically similar to arcade music from the pizza joint's "arcade) and also increases in intensity as time progresses
+* Obviously this is made with a design-goal of increasing that intensity, which is fun to explore sonically, but may not necessarily be a final goal
+
+### Next Stage
+The next thing to add is music that increases in intensity with time (as mentioned above) but also should adapt to other paramters as well. 
+One idea is to have the music become more complicated as the pizza becomes more full. This could be tied to "success" (i.e more complex pizza == more complex music) or maybe not.
+Intensity could then be tied perhaps to the timbral quality of the sound. This could be specially fun with a "pinbally" type of soundtrack where the timbre is more ringy and harsh as time progresses. 
+One problem here is obviously the competing information streams as mentioned in Bukvic's [Introduction to Sonification](https://www.routledge.com/Foundations-in-Sound-Design-for-Embedded-Media-A-Multidisciplinary-Approach/Filimowicz/p/book/9781138093898).
+It will be important to be thoughtful about what information is most important (and pushes the design values) as more sound gets added.
+
+Additionally, as this is a prototype, some on-screen controls to turn on and off certain soundstreams and/or settings may be interesting (á la Hidden Orchestra's [Creaksbox](https://hidden-orchestra.itch.io/creaksbox)).
+
+### Assets Used:
+* [Pinball Arcade Ambiance](https://freesound.org/people/Ev-Dawg/sounds/435514/) from EV-Dawg via freesound.org
+* [cooking, chopping vegetables,boiling.mp3](https://freesound.org/people/giabububaba/sounds/539311/) from giabububaba via freesouond.org
+* [Washing Dishes](https://freesound.org/people/tim.kahn/sounds/189561/) from tim.kahn via freesound.org
+
+### Notes
+<sub>
+
+###### 8 and finding out that they are a local to Montreal!
 
 </sub>
