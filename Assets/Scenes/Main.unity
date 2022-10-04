@@ -354,7 +354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &86428241
 Transform:
   m_ObjectHideFlags: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
       Data4: 239065686
     Path: event:/Ambience/Restaurant
   Event: 
-  PlayEvent: 1
+  PlayEvent: 11
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -4331,6 +4331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041186880}
   - component: {fileID: 2041186881}
+  - component: {fileID: 2041186882}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -4372,6 +4373,19 @@ MonoBehaviour:
   - Master
   CollisionTag: 
   PreloadSamples: 1
+--- !u!114 &2041186882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041186878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d803fc821e6470c8271c07f92787ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg: {fileID: 86428240}
 --- !u!1001 &2090863065
 PrefabInstance:
   m_ObjectHideFlags: 0
