@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 {
     public float      currTime;
     public GameObject restaurantBG;
-
+    
     private StudioEventEmitter emitter;
 
     // Start is called before the first frame update
@@ -20,7 +20,10 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currTime += (Time.deltaTime * 0.01f);
-        emitter.SetParameter("Walla", currTime);
+        if (currTime < 0.8f)
+        {
+            currTime += (Time.deltaTime * 0.01f);
+            emitter.SetParameter("Walla", currTime);
+        }
     }
 }

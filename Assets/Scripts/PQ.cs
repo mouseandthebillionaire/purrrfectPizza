@@ -45,6 +45,7 @@ public class PQ : MonoBehaviour
                 acceptingIngredient = false;
                 sr.sprite = PQManager.S.ingredientImages[0];
                 GlobalVariables.S.ingredientNums[0] -= 1;
+                GlobalVariables.S.ingredientsPlayed++;
                 PQManager.S.ScoreIngredients();
 
 
@@ -56,6 +57,7 @@ public class PQ : MonoBehaviour
                 acceptingIngredient = false;
                 sr.sprite = PQManager.S.ingredientImages[1];
                 GlobalVariables.S.ingredientNums[1] -= 1;
+                GlobalVariables.S.ingredientsPlayed++;
                 PQManager.S.ScoreIngredients();
 
             }
@@ -66,6 +68,7 @@ public class PQ : MonoBehaviour
                 acceptingIngredient = false;
                 sr.sprite = PQManager.S.ingredientImages[2];
                 GlobalVariables.S.ingredientNums[2] -= 1;
+                GlobalVariables.S.ingredientsPlayed++;
                 PQManager.S.ScoreIngredients();
 
             }
@@ -76,6 +79,7 @@ public class PQ : MonoBehaviour
                 acceptingIngredient = false;
                 sr.sprite = PQManager.S.ingredientImages[3];
                 GlobalVariables.S.ingredientNums[3] -= 1;
+                GlobalVariables.S.ingredientsPlayed++;
                 PQManager.S.ScoreIngredients();
 
             }
@@ -86,6 +90,7 @@ public class PQ : MonoBehaviour
                 acceptingIngredient = false;
                 sr.sprite = PQManager.S.ingredientImages[4];
                 GlobalVariables.S.ingredientNums[4] -= 1;
+                GlobalVariables.S.ingredientsPlayed++;
                 PQManager.S.ScoreIngredients();
 
             }
@@ -124,13 +129,11 @@ public class PQ : MonoBehaviour
         // I'm on the right crust - don't look on the left crust
         else if ((CL + 1) % 6 == 0 && SL % 6 == 0)
         {
-            Debug.Log(CL + " is on the Right Crust and " + SL + " is on the Left Crust - no score");
             return "";
         }
         // I'm on the left crist - don't look on the right crust
         else if (CL % 6 == 0 && ((SL + 1) % 6 == 0))
         {
-            Debug.Log(CL + " is on the Left Crust and " + SL + " is on the Right Crust - no score");
             return "";
         }
         
@@ -159,7 +162,7 @@ public class PQ : MonoBehaviour
             int myLoc = int.Parse(this.transform.name);
             int surroundingLoc = myLoc + GlobalVariables.S.directionalNums[i];
             string s = GetSurrounding(myLoc, surroundingLoc);
-            if (s == "0") GlobalVariables.S.score += 1;
+            if (s == "O") GlobalVariables.S.score += 1;
         }
     }
     
