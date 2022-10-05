@@ -155,3 +155,27 @@ Additionally, as this is a prototype, some on-screen controls to turn on and off
 ###### 8 and finding out that they are a local to Montreal!
 
 </sub>
+
+##10.05.22 Music Implementation
+Unsurprisingly, it turns out that FMOD is a fun little thing! 
+A workflow done in Ableton Live translates fairly well to the environment, and the thought-process is similar to previous explorations done in Max/MSP (though obviously with an entirely different build process).
+This similarity lies primarily with the getting, setting, and planning for how various numerical parameter values will effect musical composition, and that part feels great. 
+It will be exciting to start building out these compositions within FMOD, especially when leveraging its effect banks.
+
+The final implementation here feels okay, with the three elements of time, score, and items placed ("progression") effecting various parameters. 
+The main idea is to create a sense of "flow" when things are going right by:
+* a) applying an LPF to the restaurant noise, simulating a zone-like state, 
+* b) increasing the complexity of the overall track as the number of items increase on the pizza
+* c) applying glitched/distorted/unpleasant sounds to the music in contrast to the most desirable score at any given moment
+
+[Sound Experiment 1 WebGL Build](https://mouseandthebillionaire.github.io/purrrfectPizza/Builds/v3.1/)
+
+### Takeaways:
+* The music isn't necessarily "bad" here from an "interesting music" perspective, but it seems to work?
+* This iteration feels <i>fine</i> as far as communicating information to the player, but definitely isn't hitting anyone over the head OR being subtle?
+* The combination of visually <i>and</i> sonically communicated "score" is interesting, and it would be worth trying in the future versions that don't tell the player what to do. 
+  A scenario like this might be to remove all the instructions and have the player place and move components based on what they hear. There's really a good idea somewhere in there, I think.
+
+### Next Stage
+Technically this is the end of this stage of the experiment, with the next one being dedicated to [Elias]("https://eliassoftware.com/"), 
+but perhaps that is silly? Initially it made sense as they were positioning themselves as a dedicated solution for music specifically, but this appears to have changed and they are now more of an FMOD/Wwise alternative. Further research is needed! 
