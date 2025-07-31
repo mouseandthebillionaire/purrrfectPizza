@@ -156,7 +156,7 @@ Additionally, as this is a prototype, some on-screen controls to turn on and off
 
 </sub>
 
-##10.05.22 Music Implementation
+## 10.05.22 Music Implementation
 Unsurprisingly, it turns out that FMOD is a fun little thing! 
 A workflow done in Ableton Live translates fairly well to the environment, and the thought-process is similar to previous explorations done in Max/MSP (though obviously with an entirely different build process).
 This similarity lies primarily with the getting, setting, and planning for how various numerical parameter values will effect musical composition, and that part feels great. 
